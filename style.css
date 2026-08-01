@@ -142,3 +142,100 @@ nav{
 .login-btn:hover{
     transform: scale(1.05);
 }
+
+
+/* MAIN SECTION */
+
+/* Main left part (sidebar) */
+
+.main{
+    background-color: black;
+    min-width: 9vw ;    /*viewport width*/
+    height: 78vh;
+    display: flex;
+    justify-content: space-around;
+    color:white;
+}
+
+.main-left-part{
+    width: 27%;
+    height: 100%;
+    background-color: #121212;
+    border-radius: 10px;
+}
+
+.main-right-part{
+    width:72%;
+    height: 100%;
+    background-color: #121212;
+    border-radius: 10px;
+}
+
+.library{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1.5rem;
+}
+
+.library p{
+    font-weight: 600;
+}
+
+.library div{
+    font-size: 2rem;
+    color: rgb(179,179,179);
+    background-color: #2f2f2f;
+    padding: 8px;
+    height:1.5rem;              /* making height=width to make it square then to circle */
+    width:1.5rem;
+    display: flex;
+    align-items: center;        /* it brings it vertically to center */
+    justify-content: center;    /* it brings it vertically to center */
+    border-radius: 30rem;
+    transition: 0.2s;
+}
+
+.library div:hover{
+    color: white;
+    background-color: #3a3a3a;
+}
+
+.box-container{
+    margin-top: 1rem;
+    height: 100%;
+}
+
+.box{
+    background-color: #1f1f1f;
+    height: 22%;
+    width: 98%;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.box h4{
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding:1.3rem 0rem 0.5rem 1rem;    /* top left bottom right*/
+}
+
+.box p{
+    font-size: 0.8rem;
+    padding-left: 1rem;
+}
+
+.box button{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    padding: 0.6rem 0.8rem;
+    margin: 1rem 0 0 1rem;
+    border-radius: 25rem;
+}
+
+.box button:hover{
+    transform: scale(1.04);
+    background-color: rgb(238,238,238);
+}
+
