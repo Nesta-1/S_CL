@@ -146,7 +146,7 @@ nav{
 
 /* MAIN SECTION */
 
-/* Main left part (sidebar) */
+/* Main Left Part (Sidebar) */
 
 .main{
     background-color: black;
@@ -164,12 +164,6 @@ nav{
     border-radius: 10px;
 }
 
-.main-right-part{
-    width:72%;
-    height: 100%;
-    background-color: #121212;
-    border-radius: 10px;
-}
 
 .library{
     display: flex;
@@ -237,5 +231,71 @@ nav{
 .box button:hover{
     transform: scale(1.04);
     background-color: rgb(238,238,238);
+}
+
+
+/* Main Right Part (Music Section) */
+.main-right-part{
+    width: 72%;
+    height:100%;
+    background-color: #121212;
+    border-radius: 10px;
+    overflow: auto;     /* to make only right part to scroll */
+}
+
+.music-card img{
+    height:10rem;
+    width:10rem;
+    object-fit: cover;          /* this and bottom line ensures our img is properly aligned*/
+    object-position: center;
+    border-radius: 5px;
+}
+
+.music-card{
+    width:10rem;
+    padding:0.7rem;
+    border-radius: 5px;
+    position: relative;     /*for the play button to be fixed on card instead of entire main section */
+}
+
+.music-card:hover{
+    background-color: #222;
+}
+
+.music-section{
+    margin: 2rem 0 2rem 2rem; 
+}
+
+.songs{
+    margin: 2rem 0rem;
+    display: flex;
+    overflow-x:auto;    /*ensures the section movies in horizontal direction instead of entire page moving*/
+}
+
+.img-title{
+    margin:0.7rem 0;
+}
+
+.img-description{
+    font-size: 0.8rem;
+    color: rgb(199,199,199);
+}
+
+.music-play-btn{
+    color:rgb(32,234,32);
+    font-size: 2.7rem;
+    position: absolute; /* It won't occupy extra space */
+    background-color: black;
+    width: 2.7rem;
+    display: flex;
+    border-radius: 20rem;
+    transform: translate(110px,-40px);      /* translate(x,y)*/
+    opacity: 0;  /* to hide the play btn, we want to appear only when we hover on that card */
+    transition: 0.3s;
+}
+
+.music-card:hover .music-play-btn{
+    opacity:1;
+    transform: translate(110px,-50px);
 }
 
