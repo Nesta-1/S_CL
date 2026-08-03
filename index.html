@@ -185,6 +185,7 @@
                 </div>
 
         </div>
+  
         <div class="music-section">
                 <h2>Recently played</h2>
 
@@ -237,13 +238,41 @@
                         <div class="img-title">Title 1</div>
                         <div class="img-description">Description for our music</div>
                     </div>
-            
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <!--Player section (bottom)-->
+    <div class="player-bar">         <!-- The entire bottom section -->
+        <div class="now-bar">        <!-- Left part in player bar -->
+            <img src="Images/10.jpg" alt="">
+            <div>
+                <div class="img-title-info"> Title 1</div>
+                <div class="img-des-info"> This is the description for title 1 song</div>
+            </div>
+        </div>
+
+        <div class="music-controller">
+            <div class="player">
+                <div id="shuffle"><i class="player-btns fa-solid fa-shuffle"></i></div>
+                <div id="backward"><i class="player-btns fa-solid fa-backward-step"></i></div>
+                <div><i id="play" class="player-btns fa-solid fa-circle-play"></i></i></div>
+                <div id="forward"><i class="player-btns fa-solid fa-forward-step"></i></div>
+                <div id="repeat"><i class="player-btns fa-solid fa-repeat"></i></div>
+            </div>
+
+            <div>
+                <input type="range" id="progressBar" value="0">        <!--To create the progress bar for which part of the song is playing rn-->
+            </div>                 <!-- Setting the progress bar value to 0 so it starts from start -->
+        </div>
+
+        <div>
+                <!--This is will be empty (the 3rd part of player section)-->
         </div>
 
     </div>
-    
-     
-    <!--Player section (bottom)-->
 
 
 </body>
